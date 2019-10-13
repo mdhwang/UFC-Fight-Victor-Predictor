@@ -1,1 +1,55 @@
-Welcome
+Basic EDA Results
+
+Date Range - From 1993-11-12 to 2019-6-08 (~26 years)
+5144 Rows (fights not mirrored - can duplicate for 2x data?)
+
+
+Figths Per Year
+
+1993      8
+1994     29
+1995     33
+1996     36
+1997     39
+1998     20
+1999     43
+2000     41
+2001     40
+2002     53
+2003     41
+2004     39
+2005     80
+2006    158 (exhaustive? big jump right here - might want to look into the months)
+2007    171
+2008    201
+2009    215
+2010    253
+2011    300
+2012    341
+2013    386
+2014    503
+2015    473
+2016    493
+2017    451
+2018    474
+2019    223 (incomplete)
+
+weight_class
+
+Bantamweight             379 - 112-118
+Catch Weight              38 - depends
+Featherweight            442 - 118-126
+Flyweight                187 - 108-112
+Heavyweight              507 - 178-200
+Light Heavyweight        502 - 165-178
+Lightweight              989 - 125-132
+Middleweight             725 - 154-160
+Open Weight               92 - depends
+Welterweight             969 - 140-147
+Women's Bantamweight     111 - 135 max
+Women's Featherweight     10 - 145 max
+Women's Flyweight         50 - 125 max
+Women's Strawweight      143 - 115 max
+
+
+
