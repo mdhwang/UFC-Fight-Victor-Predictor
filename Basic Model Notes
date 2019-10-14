@@ -1,0 +1,50 @@
+Basic Model Notes
+
+
+R_fighter       5144 non-null object
+B_fighter       5144 non-null object
+Winner          5144 non-null object
+B_age           4972 non-null float64 -- 172 nulls - mean value replacement?
+weight_class    5144 non-null object
+R_Stance        5010 non-null object -- 134 nulls - random distribution based on overall vals
+B_Stance        4985 non-null object -- 159 nulls - random distribution based on overall vals
+B_Height_cms    5136 non-null float64 -- 8 nulls - lookup
+B_Reach_cms     4478 non-null float64 -- 666 nulls - KNN based on height
+B_Weight_lbs    5138 non-null float64 -- 6 nulls - lookup
+R_Height_cms    5140 non-null float64 -- 4 nulls - lookup
+R_Reach_cms     4828 non-null float64 -- 316 nulls - KNN based on height
+R_Weight_lbs    5141 non-null float64 -- 3 nulls - lookup
+R_age           5080 non-null float64 -- 64 nulls - mean value replacement?
+
+
+
+
+1st pass - Random Forest Default Vals 
+Accuracy : 0.64 
+Recall : 0.76
+Precision : 0.73 
+Notes:
+    NANs filled with means
+Cols:
+Winner
+Age
+Height
+Reach
+Weight
+
+2nd pass - Random Forest Default Vals
+Accuracy :  0.57
+Recall :  0.48
+Precision :  0.58
+Notes:
+    NANs filled with means
+    Doubled data (lol) by flipping vals and adding (other fighter perspective)
+Cols:
+Winner
+Age
+Height
+Reach
+Weight
+
+
+
