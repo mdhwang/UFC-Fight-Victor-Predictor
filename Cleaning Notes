@@ -1,0 +1,2 @@
+Used KNN to fill in missing reach data based on 3 neighbors, avg diff was 1.5cms
+Filled in Missing Height and Weight manually / calc'd mean based on divison if data not available

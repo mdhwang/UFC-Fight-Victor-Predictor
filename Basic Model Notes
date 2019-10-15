@@ -32,7 +32,9 @@ Height
 Reach
 Weight
 
-2nd pass - Random Forest Default Vals
+
+
+2nd pass - Random Forest Default Vals (double flipped data)
 Accuracy :  0.57
 Recall :  0.48
 Precision :  0.58
@@ -47,4 +49,95 @@ Reach
 Weight
 
 
+
+3rd pass - Random Forest Default Vals (same as first lol)
+Accuracy : 0.64 
+Recall : 0.76
+Precision : 0.73 
+Notes:
+    Inputted missing weight / height data
+    Calculated missing reach values with KNN data
+Cols:
+Winner
+Age - mean filled
+Height (missing vals inputted)
+Reach (KNN calculated)
+Weight (missing vals inputted)
+
+
+
+4th pass - Random Forest (n=1000,max_depth = 3) ~5 min runtime
+Accuracy : 0.69
+Recall : 0.99
+Precision : 0.68
+Notes:
+    Inputted missing weight / height data
+    Calculated missing reach values with KNN data
+Cols:
+Winner
+Age - mean filled
+Height (missing vals inputted)
+Reach (KNN calculated)
+Weight (missing vals inputted)
+
+(0.09001708224203593, 'B_age')
+(0.05450514975085243, 'B_Height_cms')
+(0.08077749038931573, 'B_Reach_cms_Updates')
+(0.13514561222637209, 'B_Weight_lbs')
+(0.05268898818989129, 'R_Height_cms')
+(0.07426643885016211, 'R_Reach_cms_Updates')
+(0.1546751488685487, 'R_Weight_lbs')
+(0.3579240894828214, 'R_age')    <---------- super high for some reason
+
+
+5th pass - Random Forest (n=100,max_depth = 3) ~1 min runtime
+Accuracy : 0.68
+Recall : 0.99
+Precision : 0.69
+Notes:
+    Inputted missing weight / height data
+    Calculated missing reach values with KNN data
+Cols:
+Winner
+Age - mean filled
+Height (missing vals inputted)
+Reach (KNN calculated)
+Weight (missing vals inputted)
+
+(0.0671575630219275, 'B_age')
+(0.034591220400371325, 'B_Height_cms')
+(0.06258073978614087, 'B_Reach_cms_Updates')
+(0.10289925982611176, 'B_Weight_lbs')
+(0.03185369734947989, 'R_Height_cms')
+(0.04651679982052685, 'R_Reach_cms_Updates')
+(0.1264041287488359, 'R_Weight_lbs')
+(0.3558661735298117, 'R_age')
+(0.1721304175167943, 'no_of_rounds')
+
+
+6th pass - Random Forest (n=100, no max features) ~1 min runtime
+Accuracy : 0.66
+Recall : 0.85
+Precision : 0.72
+Notes:
+    Inputted missing weight / height data
+    Calculated missing reach values with KNN data
+Cols:
+Winner
+Age - mean filled
+Height (missing vals inputted)
+Reach (KNN calculated)
+Weight (missing vals inputted)
+
+(0.16125968951657194, 'B_age')
+(0.1176032141606884, 'B_Height_cms')
+(0.13648112526372483, 'B_Reach_cms_Updates')
+(0.07382647036207589, 'B_Weight_lbs')
+(0.11500728460263357, 'R_Height_cms')
+(0.13361835211556028, 'R_Reach_cms_Updates')
+(0.07328867017413802, 'R_Weight_lbs')
+(0.16163807473228403, 'R_age')
+(0.027277119072323074, 'no_of_rounds')
+
+LIMITING DEPTH PUTS MORE IMPORTANCE ON AGE VS MAX TREE THE SIMILAR ATTRIBUTES ARE WEIGHTED ABOUT THE SAME
 
