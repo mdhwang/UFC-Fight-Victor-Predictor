@@ -1,0 +1,26 @@
+Modeling Tests ran at 10-16-2019_11:22:26
+---------Features-----------
+Reach_Delta
+Height_Delta
+Weight_Delta
+age_Delta
+Bantamweight
+Featherweight
+Flyweight
+Heavyweight
+Light Heavyweight
+Lightweight
+Middleweight
+Welterweight
+
+
+
+
+---------RANDOM FOREST-----------{'bootstrap': True, 'class_weight': None, 'criterion': 'gini', 'max_depth': None, 'max_features': 'auto', 'max_leaf_nodes': None, 'min_impurity_decrease': 0.0, 'min_impurity_split': None, 'min_samples_leaf': 1, 'min_samples_split': 2, 'min_weight_fraction_leaf': 0.0, 'n_estimators': 100, 'n_jobs': None, 'oob_score': False, 'random_state': None, 'verbose': 0, 'warm_start': False}
+
+RF Accuracy : 0.64 
+RF Recall : 0.82 
+RF Precision : 0.7 
+Accuracy : 0.64 
+Recall : 0.82 
+Precision : 0.7 
