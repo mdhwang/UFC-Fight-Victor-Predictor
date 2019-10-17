@@ -1,0 +1,71 @@
+Modeling Tests ran at 10-17-2019_09:54:26
+
+---------Features Included-----------
+no_of_rounds
+avg_BODY_att
+avg_BODY_landed
+avg_CLINCH_att
+avg_CLINCH_landed
+avg_DISTANCE_att
+avg_DISTANCE_landed
+avg_GROUND_att
+avg_GROUND_landed
+avg_HEAD_att
+avg_HEAD_landed
+avg_KD
+avg_LEG_att
+avg_LEG_landed
+avg_PASS
+avg_REV
+avg_SIG_STR_att
+avg_SIG_STR_landed
+avg_SIG_STR_pct
+avg_SUB_ATT
+avg_TD_att
+avg_TD_landed
+avg_TD_pct
+avg_TOTAL_STR_att
+avg_TOTAL_STR_landed
+avg_opp_BODY_att
+avg_opp_BODY_landed
+avg_opp_CLINCH_att
+avg_opp_CLINCH_landed
+avg_opp_DISTANCE_att
+avg_opp_DISTANCE_landed
+avg_opp_GROUND_att
+avg_opp_GROUND_landed
+avg_opp_HEAD_att
+avg_opp_HEAD_landed
+avg_opp_KD
+avg_opp_LEG_att
+avg_opp_LEG_landed
+avg_opp_PASS
+avg_opp_REV
+avg_opp_SIG_STR_att
+avg_opp_SIG_STR_landed
+avg_opp_SIG_STR_pct
+avg_opp_SUB_ATT
+avg_opp_TD_att
+avg_opp_TD_landed
+avg_opp_TD_pct
+avg_opp_TOTAL_STR_att
+avg_opp_TOTAL_STR_landed
+total_rounds_fought
+total_time_fought(seconds)
+Height_cms
+Reach_cms
+Weight_lbs
+age
+
+
+---------RANDOM FOREST-----------
+{'bootstrap': True, 'criterion': 'mse', 'max_depth': None, 'max_features': 'auto', 'max_leaf_nodes': None, 'min_impurity_decrease': 0.0, 'min_impurity_split': None, 'min_samples_leaf': 1, 'min_samples_split': 2, 'min_weight_fraction_leaf': 0.0, 'n_estimators': 100, 'n_jobs': None, 'oob_score': False, 'random_state': None, 'verbose': 0, 'warm_start': False}
+
+RF Accuracy : 0.57 
+
+[(0.0903, 'avg_opp_GROUND_landed'), (0.0873, 'avg_opp_GROUND_att'), (0.0565, 'avg_opp_SUB_ATT'), (0.0437, 'avg_PASS'), (0.0417, 'avg_GROUND_landed'), (0.0406, 'avg_opp_KD'), (0.0404, 'avg_SIG_STR_pct'), (0.0363, 'avg_opp_PASS'), (0.0294, 'avg_opp_TOTAL_STR_landed'), (0.0283, 'avg_KD')]---------XGB GRADIENT BOOSTING-----------
+{'base_score': 0.5, 'booster': 'gbtree', 'colsample_bylevel': 1, 'colsample_bytree': 0.4, 'gamma': 0, 'learning_rate': 0.07, 'max_delta_step': 0, 'max_depth': 3, 'min_child_weight': 1.5, 'missing': None, 'n_estimators': 1000, 'n_jobs': 1, 'nthread': None, 'objective': 'reg:linear', 'random_state': 0, 'reg_alpha': 0.75, 'reg_lambda': 0.45, 'scale_pos_weight': 1, 'seed': 42, 'silent': True, 'subsample': 0.6}
+
+RF Accuracy : 0.6 
+
+[(0.0264, 'avg_SIG_STR_pct'), (0.0261, 'avg_TOTAL_STR_landed'), (0.0253, 'avg_opp_TOTAL_STR_landed'), (0.0253, 'avg_GROUND_att'), (0.0248, 'avg_opp_TD_pct'), (0.0243, 'avg_opp_SIG_STR_pct'), (0.0229, 'total_time_fought(seconds)'), (0.0226, 'avg_opp_SUB_ATT'), (0.0224, 'avg_HEAD_landed'), (0.0222, 'total_rounds_fought')]
