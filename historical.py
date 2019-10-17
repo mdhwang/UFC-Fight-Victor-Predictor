@@ -335,9 +335,16 @@ def historical_cleaning(df):
     
     master["age"] = master["age"].fillna(int(master["age"].mean()))
 
+    drop_cols = ['Fighter','no_of_rounds']
+
+    master = master.drop(columns=drop_cols)
+
 
     test = master[master["Year"]=="2019"]
     train = master[master["Year"]!="2019"]
+
+    test = test.drop(columns="Year")
+    train = train.drop(columns="Year")
 
     y_test = test["Result"]
     X_test = test.drop(columns=["Result"])
