@@ -1,0 +1,120 @@
+Modeling Tests ran at 10-16-2019_21:54:17
+
+---------Features Included-----------
+no_of_rounds
+avg_BODY_att
+avg_BODY_landed
+avg_CLINCH_att
+avg_CLINCH_landed
+avg_DISTANCE_att
+avg_DISTANCE_landed
+avg_GROUND_att
+avg_GROUND_landed
+avg_HEAD_att
+avg_HEAD_landed
+avg_KD
+avg_LEG_att
+avg_LEG_landed
+avg_PASS
+avg_REV
+avg_SIG_STR_att
+avg_SIG_STR_landed
+avg_SIG_STR_pct
+avg_SUB_ATT
+avg_TD_att
+avg_TD_landed
+avg_TD_pct
+avg_TOTAL_STR_att
+avg_TOTAL_STR_landed
+avg_opp_BODY_att
+avg_opp_BODY_landed
+avg_opp_CLINCH_att
+avg_opp_CLINCH_landed
+avg_opp_DISTANCE_att
+avg_opp_DISTANCE_landed
+avg_opp_GROUND_att
+avg_opp_GROUND_landed
+avg_opp_HEAD_att
+avg_opp_HEAD_landed
+avg_opp_KD
+avg_opp_LEG_att
+avg_opp_LEG_landed
+avg_opp_PASS
+avg_opp_REV
+avg_opp_SIG_STR_att
+avg_opp_SIG_STR_landed
+avg_opp_SIG_STR_pct
+avg_opp_SUB_ATT
+avg_opp_TD_att
+avg_opp_TD_landed
+avg_opp_TD_pct
+avg_opp_TOTAL_STR_att
+avg_opp_TOTAL_STR_landed
+total_rounds_fought
+total_time_fought(seconds)
+Height_cms
+Reach_cms
+Weight_lbs
+age
+
+
+---------RANDOM FOREST-----------
+{'bootstrap': True, 'criterion': 'mse', 'max_depth': None, 'max_features': 'auto', 'max_leaf_nodes': None, 'min_impurity_decrease': 0.0, 'min_impurity_split': None, 'min_samples_leaf': 1, 'min_samples_split': 2, 'min_weight_fraction_leaf': 0.0, 'n_estimators': 100, 'n_jobs': None, 'oob_score': False, 'random_state': None, 'verbose': 0, 'warm_start': False}
+
+RF Accuracy : 0.57 
+
+(0.0, 'no_of_rounds')
+(0.01, 'avg_BODY_att')
+(0.01, 'avg_BODY_landed')
+(0.01, 'avg_CLINCH_att')
+(0.01, 'avg_CLINCH_landed')
+(0.01, 'avg_DISTANCE_att')
+(0.01, 'avg_DISTANCE_landed')
+(0.02, 'avg_GROUND_att')
+(0.04, 'avg_GROUND_landed')
+(0.01, 'avg_HEAD_att')
+(0.02, 'avg_HEAD_landed')
+(0.03, 'avg_KD')
+(0.01, 'avg_LEG_att')
+(0.01, 'avg_LEG_landed')
+(0.04, 'avg_PASS')
+(0.01, 'avg_REV')
+(0.0, 'avg_SIG_STR_att')
+(0.01, 'avg_SIG_STR_landed')
+(0.04, 'avg_SIG_STR_pct')
+(0.02, 'avg_SUB_ATT')
+(0.01, 'avg_TD_att')
+(0.01, 'avg_TD_landed')
+(0.02, 'avg_TD_pct')
+(0.01, 'avg_TOTAL_STR_att')
+(0.02, 'avg_TOTAL_STR_landed')
+(0.01, 'avg_opp_BODY_att')
+(0.01, 'avg_opp_BODY_landed')
+(0.01, 'avg_opp_CLINCH_att')
+(0.01, 'avg_opp_CLINCH_landed')
+(0.01, 'avg_opp_DISTANCE_att')
+(0.01, 'avg_opp_DISTANCE_landed')
+(0.08, 'avg_opp_GROUND_att')
+(0.09, 'avg_opp_GROUND_landed')
+(0.01, 'avg_opp_HEAD_att')
+(0.02, 'avg_opp_HEAD_landed')
+(0.04, 'avg_opp_KD')
+(0.01, 'avg_opp_LEG_att')
+(0.01, 'avg_opp_LEG_landed')
+(0.04, 'avg_opp_PASS')
+(0.01, 'avg_opp_REV')
+(0.01, 'avg_opp_SIG_STR_att')
+(0.03, 'avg_opp_SIG_STR_landed')
+(0.02, 'avg_opp_SIG_STR_pct')
+(0.06, 'avg_opp_SUB_ATT')
+(0.01, 'avg_opp_TD_att')
+(0.01, 'avg_opp_TD_landed')
+(0.02, 'avg_opp_TD_pct')
+(0.01, 'avg_opp_TOTAL_STR_att')
+(0.03, 'avg_opp_TOTAL_STR_landed')
+(0.03, 'total_rounds_fought')
+(0.02, 'total_time_fought(seconds)')
+(0.01, 'Height_cms')
+(0.01, 'Reach_cms')
+(0.01, 'Weight_lbs')
+(0.01, 'age')
