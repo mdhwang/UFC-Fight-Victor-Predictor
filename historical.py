@@ -348,4 +348,4 @@ def historical_cleaning(df):
     test_2019 = master[master["Year"]=="2019"]
     test_2019 = test_2019.drop(columns = ["no_of_rounds",'Year'])
 
-    return X_train,y_train,test_2019
+    return X_train,y_train,test_2019,master
