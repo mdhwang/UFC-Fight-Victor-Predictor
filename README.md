@@ -22,7 +22,7 @@ Fortunately user Rajeevw on Kaggle developed a webscriping process to pull the d
 
 [Kaggle Link!](https://www.kaggle.com/rajeevw/ufcdata)
 
-Shout out to you Rajeevw, you da real MVP.
+Shout out to you Rajeevw:
 
 
 ![MVP](/images/kd.png)
@@ -108,40 +108,61 @@ The dataset was also split with the fights that occured in 2019 to be used as a 
 
 ## Modeling
 
-Multiple statistical classification models with tested to see which performed the best with the task at hand.  
+Multiple statistical classification models were tested to see which performed the best for the task at hand.  
 
 - Logisitic Regression Classifier
 - Random Forest Classifier
 - XG Boost Classifier
 
-A grid search was performed to tune the hyperparameters of each model to see which yielded the highest accuracy.
+A grid search was performed on each model to tune the hyperparameters of each model to see which yielded the highest accuracy.
+
+Results during the grid search were logged via the log.py script to record results and parameters.
 
 
 ## Results
 
-XGBOOST ended up being the most accurate with a score of ______
+XGBOOST ended up being the most accurate with a score of ~63%
+
+Here is a snapshot of what the model results look like on some of the 2019 matchup data:
+
+![Results](/images/results.png)
+
+The trained model is used separately on each fighter to determine their individual chance of winning a fight (not necessarily their matched opponent for the fight) and the winning probability is predicted.  Those two numbers are compared and used to predict the victor of the matchup.
+
+
 
 Most influential characteristics were identified as:
 - Age
+- Average Opponent Takedown %
+- Average Opponent Significant Strike %
 - Reach
-- Opponent landed hits low
+- Average Headshots Landed
 
-Which make intuitive sense.
 
-Errors looked like _______, other conclusions here
+![Results](/images/feats.png)
+
+These can be loosely interpreted as:
+- Youth trumps experience
+- Defense wins championships - how many takedowns and hits you allow is a major factor
+- Having a longer reach than your opponent is a big indicator of being the superior fighter
+- Headshots tend to be very effective in winning the bout
+
+
 
 ## Back to the Topic
 
 Regarding the Reyes vs. Weidman fight, my model predicted the below:
 
-Dominick Reyes - 62% chance of winning a future fight
-Chris Weidman - 53% chance of winning a future fight
+Dominick Reyes - 60.9% chance of winning a future fight
+Chris Weidman - 57.6% chance of winning a future fight
 
 Since I was sleep deprived and hyped at the time, I decided it would be a good idea to put money down and put full faith into my model by betting on the fight.
 
 I was rewarded.
 
-Reyes KOed Weidman in the first round.
+![Results](/images/win.png)
+
+Reyes KOed Weidman in the 1:43 into the first round.
 
 But let's make sure I didn't just get lucky.
 
