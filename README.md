@@ -164,23 +164,12 @@ I was rewarded.
 
 Reyes KOed Weidman in the 1:43 into the first round.
 
-But let's make sure I didn't just get lucky.
-
-## Performance Since Initial Modeling and Decision Boundary Tuning
-
-Since the intitial model was created - 123 fights have occured and it is performing at an accuracy of _____
-
-Decision boundary was adjusted like so:
-
-
-
-Time to make some moolah.
 
 ## Next Steps
 
-Perfomance wise, I definitely like to increase the accuracy.  Potentially by adding in additional information to the dataset it can become a better predictor.
+Perfomance wise, I definitely like to increase the accuracy.  The decision boundary on the classifier can definitely be tuned and potentially adding additional information into the dataset it can make it become a better predictor.
 
-Style wise, I would like to make a user friendly interface to easy use of the system.
+Style wise, I would like to make a nice UX/UI to create an easy to use system.
 
 
 
